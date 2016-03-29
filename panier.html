@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping cart</title>
+
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap Minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- font-awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="css/panier.css">
+</head>
+
+<body>
+
+
+<header>
+  
+    <nav>
+      
+      <div class="nav-left">
+      
+        <a href="index.html"><img src="images/JH_logo.png" alt="logo"></a>
+        <a href="index.html" id="logo-text">Just Help !</a>
+      
+      </div>
+
+      <div class="nav-right">
+        
+        <a class="nav-margin" href="#">Rechercher</a>
+        <a class="nav-margin" href="#">Vous êtes une association</a>
+        <a class="nav-margin" href="#">Connexion</a>
+        <a href="panier.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+
+
+      </div>
+      
+    </nav>
+  </header>
+
+
+
+  <section class="shopping-cart-section">
+    <div class="nav">
+      <h2>Shopping cart</h2>
+    </div>
+
+    <div class="article">
+      <div class="article-image-container">
+        <img src="" alt="" id="panier-img1"/>
+      </div>
+      <div class="article-description">
+        <h3 id="riz-titre"></h3>
+        <h6 id="riz-desc"></h6>
+        <p id="riz-prixunit"></p>
+      </div>
+      <div class="article-total-price">
+        <a class="btn btn-default btn-lg" href="#" role="button"><span id="nb-riz"></span><br><strong id="total-riz"></strong></a>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="article-image-container">
+        <img src="" alt="" id="panier-img2"/>
+      </div>
+      <div class="article-description">
+       <h3 id="eau-titre"></h3>
+        <h6 id="eau-desc"></h6>
+        <p id="eau-prixunit"></p>
+      </div>
+      <div class="article-total-price">
+        <a class="btn btn-default btn-lg" href="#" role="button"><span id="nb-eau"></span><br><strong id="total-eau"></strong></a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <h5 id="sous-total"></h5>
+      </div>
+      <div>
+        <h5 id="tva"></h5>
+      </div>
+      <div>
+        <h5 id="panier-total"></h5>
+      </div>
+    </div>
+    <div class="cart-validation-container">
+      <a class="btn btn-success btn-lg" href="#" role="button">Valider ma commande</a>
+    </div>
+  </section>
+
+
+    <footer>
+    
+    
+    <div class="full-cont-footer">
+    
+    <div class="main-cont-foot">
+
+<!--      <div class="menu-cont">
+
+        
+        <div class="btn-group">
+            
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Français<i class="fa fa-chevron-down"></i></button>
+              
+            <div class="dropdown-menu">
+                  <ul>
+                 <li> <a class="dropdown-item" href="#">Choix 1</a></li>
+                  <li><a class="dropdown-item" href="#">Choix 2</a></li>
+                  <li><a class="dropdown-item" href="#">Choix 3</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><a class="dropdown-item" href="#">Choix 4</a></li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            
+            <button id="sdn-btn" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             EUR<i class="fa fa-chevron-down"></i></button>
+              
+            <div class="dropdown-menu">
+                  <ul>
+                 <li> <a class="dropdown-item" href="#">Choix 1</a></li>
+                  <li><a class="dropdown-item" href="#">Choix 2</a></li>
+                  <li><a class="dropdown-item" href="#">Choix 3</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><a class="dropdown-item" href="#">Choix 4</a></li>
+              </ul>
+            </div>
+        </div>
+
+
+              </div> -->
+            
+      <div class="li-cont li-cont-1">
+                
+        <strong>Société</strong><br>
+
+        <ul>
+          <a href="#"><li>A propos</li></a>
+          <a href="#"><li>Carrières</li></a>
+          <a href="#"><li>Presse</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Aide</li></a>
+        </ul>
+
+              </div>
+
+              <div class="li-cont li-cont-2">
+                
+        <strong>Découvrir</strong><br>
+
+        <ul>
+          <a href="#"><li>Confiance et sécurité</li></a>
+          <a href="#"><li>Suivi des dons</li></a>
+          <a href="#"><li>Un mot de l'équipe</li></a>
+          <a href="#"><li>Application mobile</li></a>
+          <a href="#"><li>Soutenir une oeuvre</li></a>
+        </ul>
+
+              </div>
+
+              <div class="li-cont li-cont-3">
+                
+        <strong>Autour de nous</strong><br>
+
+        <ul>
+          <a href="#"><li>Pourquoi cette idée</li></a>
+          <a href="#"><li>La logistique</li></a>
+          <a href="#"><li>Nos objectifs</li></a>
+          <a href="#"><li>Responsabilité</li></a>
+          <a href="#"><li>Pour bientôt</li></a>
+        </ul>
+
+              </div>
+    
+    </div>
+
+    <hr>
+
+    <div class="end-footer">
+      
+      <h5>Rejoignez-nous sur</h5>
+      
+      <div class="row-icons">
+      
+        <div class="round-icon-border round-facebook"><i class="fa fa-facebook"></i></div>
+        <div class="round-icon-border round-linkedin"><i class="fa fa-linkedin"></i></div>
+        <div class="round-icon-border round-twitter"><i class="fa fa-twitter"></i></div>
+        <div class="round-icon-border round-google"><i class="fa fa-google-plus"></i></div>
+        <div class="round-icon-border round-instagram"><i class="fa fa-instagram"></i></div>
+        <div class="round-icon-border round-youtube"><i class="fa fa-youtube-play"></i></div>
+        <div class="round-icon-border round-pinterest"><i class="fa fa-pinterest"></i></div>
+      
+      
+      </div>
+
+      <h6>© Just Help</h5>
+      
+
+    </div>
+
+    
+  </div>  
+  </footer>
+
+  
+  <script src   ="js/magasin.js"></script>
+  <script>
+   affichePanier()
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<title>Just Help!</title>
+	<meta name="description" content="A REMPLIR" />
+	<meta name="author" content="A REMPLIR" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/magasin.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/magasin.js"></script>
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Nom du site - slogan" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="Lien du site" />
+	<meta property="og:image" content="Image" />
+	<meta property="og:description" content="Bienvenue sur Just Help - Courte description" />
+	<meta property="og:locale" content="alternate" />
+	<meta property="og:site_name" content="Just Help!" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@TwitterJustHelp" />
+	<meta name="twitter:title" content="Just Help - Slogan" />
+	<meta name="twitter:description" content="Description" />
+	<meta name="twitter:image" content="Image" />
+</head>
+<body>
+	
+<header>
+	<nav>
+			
+			<div class="nav-left">
+			
+				<a href="index.html"><img src="images/JH_logo.png" alt="logo"></a>
+				<a href="index.html" id="logo-text">Just Help !</a>
+			
+			</div>
+
+			<div class="nav-right">
+				
+				<a class="nav-margin" href="#">Rechercher</a>
+				<a class="nav-margin" href="#">Vous êtes une association</a>
+				<a class="nav-margin" href="#">Connexion</a>
+				<a href="panier.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+
+
+			</div>
+			
+		</nav>
+		</header>
+
+
+	<main>
+		<div class="presentation">
+			<div class="presentation-img">
+				<img src="images/card1.jpg" alt="">	
+			</div>
+			<div class="presentation-text">		
+				<h1>Emmaüs</h1>
+				<h3>Camp de réfugiés de Calais</h3>
+				<br>
+				<p>Au fil des années, les réfugiés de Calais voient leurs conditions de vie se dégrader dramatiquement. Emmaüs cherche à leur procurer les biens nécessaires afin de vivre décemment leur séjour en France. Vos dons nous aideront à réunir assez de nourriture et de produits d'hygiène pour subvenir à leur besoins.
+				</p>
+			</div>
+		</div>
+		<div class="avancer">
+			<div class="avancer-chiffre">
+				<h3 class="avancer-separation">40 Jours Restants</h3>
+				<h3>130 Donateurs</h3>
+			</div>
+			<div class="fbar-container">
+				<div class="fbar-content">60%</div>
+			</div>
+		</div>
+
+		<div class="magasin">
+
+			<div class="card">
+				<div class="card-imgbar">
+					<div class="card-img img-riz">
+					</div>
+					<div class="progressbar-container">
+						<div class="progressbar-content wb40" id="progress-riz">
+							40kg / 100kg
+						</div>
+						<div class="cardplus" id="card-riz"></div>
+					</div>
+				</div>
+				<div class="card-text">
+					<h2>RIZ</h2>
+					<h3>2€ / Kg</h3>
+					<div class="card-nombre">
+						<button id="moins-riz">-</button>
+						<input type="text" value="1" class="nb-achat" id="nb-riz">
+						<button id="plus-riz">+</button>
+					</div>
+					<button id="card-valide-riz" class="card-valide">Ajouter</button>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-imgbar">
+					<div class="card-img img-eau">
+					</div>
+					<div class="progressbar-container">
+						<div class="progressbar-content" id="progress-eau">
+							50 / 200
+						</div>
+						<div class="cardplus" id="card-eau"></div>
+					</div>
+				</div>
+				<div class="card-text">
+					<h2>EAU</h2>
+					<h3>0,5€ / unité</h3>
+					<div class="card-nombre">
+						<button id="moins-eau">-</button>
+						<input type="text" value="1" class="nb-achat" id="nb-eau">
+						<button id="plus-eau">+</button>
+					</div>
+					<button id="card-valide-eau" class="card-valide">Ajouter</button>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-imgbar">
+					<div class="card-img img-tomates">
+					</div>
+					<div class="progressbar-container">
+						<div class="progressbar-content" id="progress-tomate">
+							10 / 30
+						</div>
+					</div>
+				</div>
+				<div class="card-text">
+					<h2>TOMATES</h2>
+					<h3>0.50€ / unité</h3>
+					<div class="card-nombre">
+						<button>+</button>
+						<input type="text" value="1" class="nb-achat">
+						<button>-</button>
+					</div>
+					<button class="card-valide">Ajouter</button>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-imgbar">
+					<div class="card-img img-thon">
+					</div>
+					<div class="progressbar-container">
+						<div class="progressbar-content" id="progress-thon">
+							5 / 20
+						</div>
+					</div>
+				</div>
+				<div class="card-text">
+					<h2>THON</h2>
+					<h3>2€ / unité</h3>
+					<div class="card-nombre">
+						<button>+</button>
+						<input type="text" value="1" class="nb-achat">
+						<button>-</button>
+					</div>
+					<button class="card-valide">Ajouter</button>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-imgbar">
+					<div class="card-img img-mais">
+					</div>
+					<div class="progressbar-container">
+						<div class="progressbar-content" id="progress-mais">
+							11 / 25
+						</div>
+					</div>
+				</div>
+				<div class="card-text">
+					<h2>MAÏS</h2>
+					<h3>0.30€ / unité</h3>
+					<div class="card-nombre">
+						<button>+</button>
+						<input type="text" value="1" class="nb-achat">
+						<button>-</button>
+					</div>
+					<button class="card-valide">Ajouter</button>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-imgbar">
+					<div class="card-img img-huile">
+					</div>
+					<div class="progressbar-container">
+						<div class="progressbar-content" id="progress-huile">
+							1 / 5
+						</div>
+					</div>
+				</div>
+				<div class="card-text">
+					<h2>HUILE</h2>
+					<h3>3€ / unité</h3>
+					<div class="card-nombre">
+						<button>+</button>
+						<input type="text" value="1" class="nb-achat">
+						<button>-</button>
+					</div>
+					<button class="card-valide">Ajouter</button>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-imgbar">
+					<div class="card-img img-haricot">
+					</div>
+					<div class="progressbar-container">
+						<div class="progressbar-content" id="progress-haricot">
+							28 / 40
+						</div>
+					</div>
+				</div>
+				<div class="card-text">
+					<h2>HARICOT</h2>
+					<h3>1.50€ / unité</h3>
+					<div class="card-nombre">
+						<button>+</button>
+						<input type="text" value="1" class="nb-achat">
+						<button>-</button>
+					</div>
+					<button class="card-valide">Ajouter</button>
+				</div>
+			</div>
+
+			<div class="card fini">
+				<div class="card-imgbar">
+					<div class="card-img img-pates">
+					</div>
+					<div class="progressbar-container">
+						<div class="progressbar-content wb100">
+							150 / 150
+						</div>
+					</div>
+				</div>
+				<div class="card-text">
+					<h2>PATES</h2>
+					<h3>1,20€ / unité</h3>
+					<div class="card-nombre">
+						<button>+</button>
+						<input type="text" value="1" class="nb-achat">
+						<button>-</button>
+					</div>
+					<button class="card-valide">Ajouter</button>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+		<footer>
+		
+		
+		<div class="full-cont-footer">
+		
+		<div class="main-cont-foot">
+
+<!-- 			<div class="menu-cont">
+
+				
+				<div class="btn-group">
+					  
+					  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   Français<i class="fa fa-chevron-down"></i></button>
+						  
+						<div class="dropdown-menu">
+							    <ul>
+							   <li> <a class="dropdown-item" href="#">Choix 1</a></li>
+							    <li><a class="dropdown-item" href="#">Choix 2</a></li>
+							    <li><a class="dropdown-item" href="#">Choix 3</a></li>
+							    <div class="dropdown-divider"></div>
+							    <li><a class="dropdown-item" href="#">Choix 4</a></li>
+							</ul>
+						</div>
+				</div>
+
+				<div class="btn-group">
+					  
+					  <button id="sdn-btn" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   EUR<i class="fa fa-chevron-down"></i></button>
+						  
+						<div class="dropdown-menu">
+							    <ul>
+							   <li> <a class="dropdown-item" href="#">Choix 1</a></li>
+							    <li><a class="dropdown-item" href="#">Choix 2</a></li>
+							    <li><a class="dropdown-item" href="#">Choix 3</a></li>
+							    <div class="dropdown-divider"></div>
+							    <li><a class="dropdown-item" href="#">Choix 4</a></li>
+							</ul>
+						</div>
+				</div>
+
+
+	         		</div> -->
+	         	
+			<div class="li-cont li-cont-1">
+	         			
+				<strong>Société</strong><br>
+
+				<ul>
+					<a href="#"><li>A propos</li></a>
+					<a href="#"><li>Carrières</li></a>
+					<a href="#"><li>Presse</li></a>
+					<a href="#"><li>Blog</li></a>
+					<a href="#"><li>Aide</li></a>
+				</ul>
+
+	         		</div>
+
+	         		<div class="li-cont li-cont-2">
+	         			
+				<strong>Découvrir</strong><br>
+
+				<ul>
+					<a href="#"><li>Confiance et sécurité</li></a>
+					<a href="#"><li>Suivi des dons</li></a>
+					<a href="#"><li>Un mot de l'équipe</li></a>
+					<a href="#"><li>Application mobile</li></a>
+					<a href="#"><li>Soutenir une oeuvre</li></a>
+				</ul>
+
+	         		</div>
+
+	         		<div class="li-cont li-cont-3">
+	         			
+				<strong>Autour de nous</strong><br>
+
+				<ul>
+					<a href="#"><li>Pourquoi cette idée</li></a>
+					<a href="#"><li>La logistique</li></a>
+					<a href="#"><li>Nos objectifs</li></a>
+					<a href="#"><li>Responsabilité</li></a>
+					<a href="#"><li>Pour bientôt</li></a>
+				</ul>
+
+	         		</div>
+		
+		</div>
+
+		<hr>
+
+		<div class="end-footer">
+			
+			<h5>Rejoignez-nous sur</h5>
+			
+			<div class="row-icons">
+			
+				<div class="round-icon-border round-facebook"><i class="fa fa-facebook"></i></div>
+				<div class="round-icon-border round-linkedin"><i class="fa fa-linkedin"></i></div>
+				<div class="round-icon-border round-twitter"><i class="fa fa-twitter"></i></div>
+				<div class="round-icon-border round-google"><i class="fa fa-google-plus"></i></div>
+				<div class="round-icon-border round-instagram"><i class="fa fa-instagram"></i></div>
+				<div class="round-icon-border round-youtube"><i class="fa fa-youtube-play"></i></div>
+				<div class="round-icon-border round-pinterest"><i class="fa fa-pinterest"></i></div>
+			
+			
+			</div>
+
+			<h6>© Just Help</h5>
+			
+
+		</div>
+
+		
+	</div>	
+	</footer>
+<!-- JS Footer -->
+	<script src=js/magasin.js></script>
+	<script>
+		initRiz();
+		initEau();
+		initPanier();
+		initBar('progress-eau', 200, 50);
+		initBar('progress-tomate', 30, 10);
+		initBar('progress-thon', 20, 5);
+		initBar('progress-mais', 25, 11);
+		initBar('progress-huile', 5, 1);
+		initBar('progress-haricot', 40, 28);
+	</script>
+</body>
+</html>
